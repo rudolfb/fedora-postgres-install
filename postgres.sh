@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+declare CWD=$(pwd)
+
 sudo dnf install nano -y
 sudo dnf upgrade -y
 
@@ -17,3 +21,5 @@ if [[ -z "$PASSWD" ]]; then
 fi
 
 exit
+
+cd "$CWD"
